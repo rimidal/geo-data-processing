@@ -10,6 +10,8 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+
 ./cmake-build-debug
 *.txt
 *.csv
+.idea
