@@ -196,6 +196,12 @@ void calculateAdvance() {
 }
 
 int main(int argc, char *argv[]) {
+    if(argv[1]==NULL){
+        cout << "You have to provide path to data with points and polygons as first argument..." << endl
+         << "for example: /home/{HOME}/geo-data-processing/data"
+             << endl;
+        return -1;
+    }
     std::string pathToData = argv[1];
 
     string points_path = pathToData + "/converted_points1000.csv";
